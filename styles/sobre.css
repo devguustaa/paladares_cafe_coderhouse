@@ -1,0 +1,138 @@
+@import url(style.css);
+
+#header {
+    height: 130px;
+}
+
+main {
+    background-color: #fbede5;
+}
+
+/* estilos sobre a cafeteria */
+
+.container_sobre {
+    padding: 100px;
+}
+
+h1 {
+    font-family: "League Spartan", sans-serif;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #361500;
+}
+
+.texto_sobre {
+    color: #361500;
+    font-size: 22px;
+    text-align: justify;
+}
+
+/* estilos sobre os alunos */
+
+h2, h3 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    color: #361500;
+    text-align: center;
+}
+
+.container_perfis {
+    display: flex;       
+    color: #fff;
+    gap: 30px;
+}
+
+.box_perfis {
+    display: flex;
+    flex-direction: column;
+    background-color:#0D2F26;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid ;
+    border-radius: 30px;
+    border: none;
+    gap: 20px;
+}
+
+.image_perfil {
+    height: 6rem;
+    margin: 3% auto;
+    border-radius: 50%;
+}
+
+.nome {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.redes_item {
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+
+/* TELAS PEQUENAS */
+@media only screen and (max-width: 767px) {
+
+    /* estilo responsivo sobre a cafeteria */
+    .container_sobre {
+        padding: 50px 30px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .texto_sobre {
+        font-size: 25px;
+    }
+
+    /* estilo responsivo sobre os alunos */
+
+    h2, h3 {
+        font-size: 45px;
+    }
+    .container_perfis {
+        flex-direction: column;
+        gap: 0;
+    }
+    .box_perfis {
+        padding: 10px;
+        margin: 20px;
+    }
+    .nome {
+        font-size: 25px;
+    }
+}
+
+/* TELAS GRANDES */
+@media only screen and (max-width: 1280px) {
+    .container_sobre {
+        padding: 50px 25px;
+    }
+    h1, h2, h3{ 
+        font-size: 45px;
+    }
+    .texto_sobre {
+        font-size: 25px;    
+    }
+    .box_perfis {
+        width: 500px;
+        padding: 10px;
+    }
+    .nome {
+        font-size: 30px;
+    }
+    .perfil_text {
+        font-size: 20px;
+    }
+}  

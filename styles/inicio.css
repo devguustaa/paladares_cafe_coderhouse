@@ -1,0 +1,249 @@
+@import url(style.css);
+
+
+
+.container_sabores {
+    width: 100%;
+    padding: 28px 0;
+    background-image: linear-gradient(to bottom, #0D2F26, #15483a);
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.sabores_destaque {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 36px;
+    color: #e9a209;
+    font-weight: 400;
+}
+
+.image_sabores {
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+.container_cafe {
+    display: flex;
+    margin-top: 80px;
+}
+
+.image_graos {
+    width: 400px;
+    height: 300px;
+    margin-top: 280px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 320px;
+    margin-left: 300px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.destaque_cafe {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.texto_cafe {
+    margin-top: 370px;
+    margin-left: -250px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container_torras {
+    display: flex flex;
+    background-color: #FBEEE5;
+    width: 100%;
+    padding-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.torras_destaque {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.card_torras {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    gap: 25px;
+    padding: 25px;
+}
+
+.box_torras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    align-content: space-around;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: #C68B59;
+    color: #fff;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    align-content: space-around;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: #865439;
+    color: #fff;
+}
+
+.titulo_media { 
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    align-content: space-around;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: #402218;
+    color: #fff;
+}
+
+.titulo_escura {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    align-content: space-around;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background-color: #361500;
+    color: #fff;
+}
+
+  /*RESPONSIVIDADE EM TELAS PEQUENAS*/
+
+@media only screen and (max-width: 767px) {
+    .image_sabores {
+        display: none;
+    }
+    .container_sabores {
+        display: flex;
+        justify-content: center;
+        height: 110px;
+    }
+    .image_graos {
+        margin-top: 80px;
+        width: 300px;
+        height: 200px;
+    }
+    .container_cafe {
+        flex-direction: column;
+    }
+    h2 {
+        margin: 0;
+        text-align: center;
+    }
+    .texto_cafe {
+        margin: 0;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .card_torras  {
+        flex-direction: column;
+        height: 100%;
+    }
+    .torras_text {
+        font-size: 20px;
+    }
+    .image_cafe {
+        width: 450px;
+    }
+}
+  
+  /* TELAS MÉDIAS */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .image_sabores {
+        top: 0px;
+        width: 600px;
+    }
+    .container_sabores {
+        text-align: center;
+        height: 110px;
+    }
+    .image_graos {
+        margin-top: 80px;
+        width: 300px;
+        height: 200px;
+    }
+    .container_cafe {
+        flex-direction: column;
+    }
+    h2 {
+        margin: 0;
+        text-align: center;
+    }
+    .texto_cafe {
+        font-size: 25px;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 400;
+    }
+    .card_torras  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        margin: 20px 0; 
+    }
+    .torras_text {
+        font-size: 25px;
+    }
+    .image_cafe {
+        width: 700px;
+    }
+  }
